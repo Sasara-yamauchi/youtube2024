@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+label {
+    display: none;
+}
+
+#doSpeed {
+    display: none;
+}
+
+.searchlist {
+    display: none;
+}
+
+form {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#searchBtn {
+    cursor: pointer;
+    background-color: rgba(255,
+            0,
+            0,
+            0);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    padding-left: 0;
+
+}
+
+#searchBtn::before {
+    content: '';
+    /*何も入れない*/
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(./img/search.svg);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+input {
+    color: #859fc6;
+    background: #dee7f1;
+    padding: 5px 15px;
+    padding-right: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#player {
+    width: 100%;
+    height: 40vh;
+}
+
+
+body {
+    background: #cdc7ea;
+    margin: 0;
+}
+
+
+.flex {
+    display: flex;
+    margin: 20px 40px;
+    justify-content: space-between;
+}
+
+.play__do {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+
+    margin: 75px 20px 50px;
+}
+
+.play {
+    margin: 50px 0;
+}
+
+
+.play li {
+    margin: 10px;
+}
+
+#MovieId {
+    top: 20px;
+    opacity: 0;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.voice {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    left: 20px;
+    width: 33px;
+}
+
+.selectbtn {
+
+    margin-left: 50px;
+}
+
+.selectbtn ul {
+
+    width: 40px;
+    text-align: right;
+}
+
+.seimg {
+    top: -10px;
+    z-index: -1;
+    position: relative;
+    width: 25px;
+}
+
+.pl {
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+}
+
+.pl-2 {
+    margin: 0 auto;
+}
+
+.dostop {
+    width: fit-content;
+}
+
+.plimg {
+    z-index: -1;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.plimg2 {
+    top: -5px;
+}
