@@ -13,8 +13,7 @@ label {
 }
 
 form {
-    margin-top: 10px;
-    margin-left: 40px;
+    margin: 0;
 }
 
 #searchBtn {
@@ -39,10 +38,13 @@ form {
     background-image: url(./img/search.svg);
     background-size: contain;
     vertical-align: middle;
+
 }
 
 
 input {
+
+    width: 70%;
     color: #859fc6;
     background: #dee7f1;
     padding: 5px 15px;
