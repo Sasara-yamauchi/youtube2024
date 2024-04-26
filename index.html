@@ -16,78 +16,78 @@
 
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <!-- 1. ここの<div>タグがYoutubeの<iframe>に置き換わる。 -->
-    <div class="inner">
-
-        <div id="player"></div>
-        <form>
-            <input type="search" id="ytSearch" value="剣持刀也" />
-            <button id="searchBtn">&nbsp;</button><select class="searchlist"></select>
-        </form>
 
 
+    <div id="player"></div>
+    <form>
+        <input type="search" id="ytSearch" value="剣持刀也" />
+        <button id="searchBtn">&nbsp;</button><select class="searchlist"></select>
+    </form>
 
 
-        <nav>
-            <ul class="play">
-                <div class="pl pl-2">
-                    <li id="dostop">&nbsp;</li><!----停止ボタン-->
-                    <img src="./img/stop-solid.svg" alt="" class="plimg plimg4">
-                </div>
-                <div class="play__do">
-                    <div class="pl">
-                        <li id="do10sPrev">&nbsp;</li>
-                        <img src="./img/arrow-rotate-left-solid.svg" alt="" class="plimg plimg1">
-                    </div>
-                    <div class="pl">
-                        <li id="doplay">&nbsp;</li><!--再生ボタン-->
-                        <img src="./img/play-solid.svg" alt="" class="plimg plimg2">
-                    </div>
-                    <div class="pl">
-                        <li id="do10sNext">&nbsp;</li>
-                        <img src="./img/arrow-rotate-right-solid.svg" alt="" class="plimg plimg3">
-                    </div>
-                </div>
-                <div class="pl pl-2">
-                    <li id="dopause">&nbsp;</li><!--一時停止-->
-                    <img src="./img/pause-solid.svg" alt="" class="plimg plimg5">
-                </div>
-            </ul>
-            <label>ボリューム<input type="range" min="0" max="100" name="volume" id="volume" value="50" />
-                <span id="volumeNum"></span>
-            </label>
-        </nav>
-        <form id="doSpeed">
-            <input type="radio" id="mslow" name="speed" value="0.25" />
-            <label for="mslow">0.25</label>
-            <input type="radio" id="slow" name="speed" value="0.5" />
-            <label for="slow">0.5</label>
-            <input type="radio" id="normal" name="speed" value="1.0" checked />
-            <label for="normal">1</label>
-            <input type="radio" id="hspeed" name="speed" value="1.5" />
-            <label for="hspeed">1.5</label>
-            <input type="radio" id="mhspeed" name="speed" value="2" />
-            <label for="mhspeed">2</label>
-        </form>
 
-        <div class="flex">
-            <img src="./img/volume-xmark-solid.svg" alt="" class="voice" id="mute">
-            <div class="selectbtn">
-                <ul>
-                    <li>
-                        <select id="MovieId" class="ytMovie" name="ytMovie">
-                            <option selected>選択してください。</option>
-                            <option value="4FU8i_yDxoA">【歌ってみた】にっこり^^調査隊のテーマ【かえみとがびと】</option>
-                            <option value="N6u0p_WSu1o">セカイ再信仰特区／covered by 剣持刀也</option>
-                            <option value="HuUe34mOGjA">【オリジナルMV】Blessing / にじさんじ元2期生 cover.
-                            </option>
-                            <option value="NZW29972DN8">ray(cover)-月ノ美兎、剣持刀也 [Live Video] from #リアルタイムARライブ</option>
-                        </select>
-                    </li>
-                </ul>
-                <img src="./img/bars-solid.svg" alt="" class="seimg">
+
+    <nav>
+        <ul class="play">
+            <div class="pl pl-2">
+                <li id="dostop">&nbsp;</li><!----停止ボタン-->
+                <img src="./img/stop-solid.svg" alt="" class="plimg plimg4">
             </div>
+            <div class="play__do">
+                <div class="pl">
+                    <li id="do10sPrev">&nbsp;</li>
+                    <img src="./img/arrow-rotate-left-solid.svg" alt="" class="plimg plimg1">
+                </div>
+                <div class="pl">
+                    <li id="doplay">&nbsp;</li><!--再生ボタン-->
+                    <img src="./img/play-solid.svg" alt="" class="plimg plimg2">
+                </div>
+                <div class="pl">
+                    <li id="do10sNext">&nbsp;</li>
+                    <img src="./img/arrow-rotate-right-solid.svg" alt="" class="plimg plimg3">
+                </div>
+            </div>
+            <div class="pl pl-2">
+                <li id="dopause">&nbsp;</li><!--一時停止-->
+                <img src="./img/pause-solid.svg" alt="" class="plimg plimg5">
+            </div>
+        </ul>
+        <label>ボリューム<input type="range" min="0" max="100" name="volume" id="volume" value="50" />
+            <span id="volumeNum"></span>
+        </label>
+    </nav>
+    <form id="doSpeed">
+        <input type="radio" id="mslow" name="speed" value="0.25" />
+        <label for="mslow">0.25</label>
+        <input type="radio" id="slow" name="speed" value="0.5" />
+        <label for="slow">0.5</label>
+        <input type="radio" id="normal" name="speed" value="1.0" checked />
+        <label for="normal">1</label>
+        <input type="radio" id="hspeed" name="speed" value="1.5" />
+        <label for="hspeed">1.5</label>
+        <input type="radio" id="mhspeed" name="speed" value="2" />
+        <label for="mhspeed">2</label>
+    </form>
+
+    <div class="flex">
+        <img src="./img/volume-xmark-solid.svg" alt="" class="voice" id="mute">
+        <div class="selectbtn">
+            <ul>
+                <li>
+                    <select id="MovieId" class="ytMovie" name="ytMovie">
+                        <option selected>選択してください。</option>
+                        <option value="4FU8i_yDxoA">【歌ってみた】にっこり^^調査隊のテーマ【かえみとがびと】</option>
+                        <option value="N6u0p_WSu1o">セカイ再信仰特区／covered by 剣持刀也</option>
+                        <option value="HuUe34mOGjA">【オリジナルMV】Blessing / にじさんじ元2期生 cover.
+                        </option>
+                        <option value="NZW29972DN8">ray(cover)-月ノ美兎、剣持刀也 [Live Video] from #リアルタイムARライブ</option>
+                    </select>
+                </li>
+            </ul>
+            <img src="./img/bars-solid.svg" alt="" class="seimg">
         </div>
     </div>
+
     <!-- <script>
 
 
