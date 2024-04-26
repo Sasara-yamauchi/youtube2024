@@ -17,13 +17,6 @@ form {
     text-align: center;
 }
 
-.inner {
-    position: relative;
-    background: #cdc7ea;
-    z-index: -1;
-    width: 350px;
-    margin: auto;
-}
 
 #searchBtn {
     cursor: pointer;
